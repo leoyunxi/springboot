@@ -8,15 +8,10 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-@ServletComponentScan
-public class DemoSpringbootApplication extends SpringBootServletInitializer {
+public class DemoSpringbootApplication{
 
     public static void main(String[] args) {
         SpringApplication.run(DemoSpringbootApplication.class, args);
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(Application.class);
-    }
 }
