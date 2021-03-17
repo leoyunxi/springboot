@@ -1,5 +1,6 @@
 package com.example.demospringboot.web;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.text.DateFormat;
 import java.util.Date;
 
-@RestController
+@Controller
 public class HelloController {
 
     @RequestMapping("/hello")
