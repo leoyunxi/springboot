@@ -11,7 +11,7 @@ import java.util.Date;
 @Controller
 public class HelloController {
 
-    @RequestMapping("/test")
+    @RequestMapping("/hello")
     public String hello(Model m) throws Exception {
         m.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
         // thymeleaf
